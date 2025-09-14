@@ -1,0 +1,80 @@
+h1 {
+    color: rgb(226, 226, 226);
+    font-size: 2em;
+}
+body{
+    background-color: rgb(70, 70, 70);
+}
+html{
+    font-family: sans-serif
+}
+a:link {      /* unvisited link */
+  color: inherit;
+  text-decoration: none;
+}
+
+a:visited {   /* visited link */
+  color: inherit
+}
+
+a:hover {     /* when mouse is over */
+  color: #acacac;
+}
+
+a:active {    /* when clicked */
+  color: #646464;
+}
+.topbar {
+  width: 100%;               /* přes celou šířku okna */
+  height: 60px;              /* výška lišty */
+  background-color: #3b3b3b;    /* tmavé pozadí */
+  color: rgb(226, 226, 226); 
+  display: flex;             /* umožní flexbox pro zarovnání */
+  align-items: center;       /* vertikálně vycentruje obsah */
+  padding: 0 20px;           /* vodorovný padding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* jemný stín */
+  position: fixed;           /* lišta zůstane nahoře při scrollu */
+  top: 0;
+  left: 0;
+  z-index: 1000;             /* vždy nad ostatními prvky */
+}
+.leftbar{
+  width: 200px;               /* přes celou šířku okna */
+  height: 100%;              /* výška lišty */
+  background-color: #333;    /* tmavé pozadí */
+  color: rgb(226, 226, 226); 
+  display: flex;             /* umožní flexbox pro zarovnání */
+  align-items: left;       /* vertikálně vycentruje obsah */
+  padding: 20 0px;           /* vodorovný padding */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* jemný stín */
+  position: fixed;           /* lišta zůstane nahoře při scrollu */
+  top: 60;
+  left: 0;
+  z-index: 999;             /* vždy nad ostatními prvky */ 
+}
+
+.topbartext {
+  font-size: 20px;
+  font-weight: bold;
+}
+.leftbartext{
+  font-size: 18px;
+  margin-left: 0px; /* odsazení od levé lišty */
+  padding-top: 70px;  /* odsazení od horní lišty */
+  padding-left: 20px;
+}
+body {
+  margin: 0; /* odstraní výchozí margin pro body */
+}
+
+main {
+  padding-top: 60px; /* stejné jako výška lišty (.topbar) */
+  text-align: center;
+  font-size: 2em;
+}
+
+.maintext {
+  text-align: center;
+  font-size: 2em;
+
+}
